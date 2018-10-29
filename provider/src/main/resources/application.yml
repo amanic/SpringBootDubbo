@@ -1,0 +1,13 @@
+server:
+  port: 8080
+
+spring:
+  dubbo:
+    application:
+      name: provider
+    scan: cht.dubbo.provider.service
+    registry:
+      address: zookeeper://172.20.100.119:2181
+    protocal:
+      name: dubbo
+      port: 20880
